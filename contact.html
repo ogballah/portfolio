@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daman Mavi - Contact Me</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="full.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width:961px)">
+
+    <link href="tablet.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width:481px) and (max-width:960px)">
+
+    <link href="phone.css" rel="stylesheet" type="text/css"
+          media="only screen and (max-width:480px)">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav>
+            <h4>
+                <a class="button" href="index.html">Home</a>
+                <a class="button" href="about.html">About Me</a>
+                <a class="button" href="projects.html">Projects</a>
+                <a class="button" href="contact.html">Contact Me</a>
+            </h4>
+            <div class="clear"></div>
+        </nav>
+
+    </header>
+
+    <main>
+    <article>
+
+        <section>
+            <h2>Contact Form</h2>
+
+            <p>
+                Send me your questions, comments, or project queries by
+                completing the form below. All fields are required.
+            </p>
+
+            <form action="mailto:damanjeetmavi2006@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"
+                           placeholder="Your name"
+                           pattern="[A-Za-z][A-Za-z .']+"
+                           title="Enter your name using letters only."
+                           required>
+                </p>
+
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"
+                           placeholder="name@example.com"
+                           title="Enter a valid email, e.g. name@example.com"
+                           required>
+                </p>
+
+                <p>
+                    <label for="phone">Cell Number</label><br>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="6471234567"
+                           pattern="[0-9]{10}"
+                           title="Enter a 10-digit phone number, digits only."
+                           required>
+                </p>
+
+                <p>
+                    <label for="comments">Comments</label><br>
+                    <textarea id="comments" name="comments"
+                              cols="60" rows="6"
+                              minlength="10"
+                              placeholder="Question, comment or query"
+                              required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </p>
+
+            </form>
+        </section>
+
+    </article>
+    </main>
+
+    <footer>
+        <address>
+            <p>
+                Contact me at
+                <a href="mailto:damanjeetmavi2006@gmail.com">damanjeetmavi2006@gmail.com</a>
+            </p>
+        </address>
+
+        <p>&copy; 2026 Daman Mavi</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
