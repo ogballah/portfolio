@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <title>Daman Mavi - Contact Me</title>
 
+    <!-- Makes the page use the device's real screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Desktop styles: screens 961px and wider -->
     <link href="full.css" rel="stylesheet" type="text/css"
           media="only screen and (min-width:961px)">
 
+    <!-- Tablet styles: screens 481px to 960px -->
     <link href="tablet.css" rel="stylesheet" type="text/css"
           media="only screen and (min-width:481px) and (max-width:960px)">
 
+    <!-- Phone styles: screens 480px and narrower -->
     <link href="phone.css" rel="stylesheet" type="text/css"
           media="only screen and (max-width:480px)">
 
@@ -20,8 +24,10 @@
 
 <body>
 
+<!-- Wrapper centers the page and sets its fluid width -->
 <div id="wrapper">
 
+    <!-- Header: page title and navigation menu -->
     <header>
         <h1>Contact Me</h1>
 
@@ -32,11 +38,13 @@
                 <a class="button" href="projects.html">Projects</a>
                 <a class="button" href="contact.html">Contact Me</a>
             </h4>
+            <!-- Empty div that clears the floated buttons -->
             <div class="clear"></div>
         </nav>
 
     </header>
 
+    <!-- Main content of the page -->
     <main>
     <article>
 
@@ -48,10 +56,12 @@
                 completing the form below. All fields are required.
             </p>
 
+            <!-- Form opens the visitor's email app addressed to me (no backend needed) -->
             <form action="mailto:damanjeetmavi2006@gmail.com"
                   method="post"
                   enctype="text/plain">
 
+                <!-- Name: required, letters/spaces/periods/apostrophes only -->
                 <p>
                     <label for="name">Name</label><br>
                     <input type="text" id="name" name="name"
@@ -61,6 +71,7 @@
                            required>
                 </p>
 
+                <!-- Email: type="email" checks for a valid email format -->
                 <p>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email"
@@ -69,6 +80,7 @@
                            required>
                 </p>
 
+                <!-- Phone: pattern allows exactly 10 digits -->
                 <p>
                     <label for="phone">Cell Number</label><br>
                     <input type="tel" id="phone" name="phone"
@@ -78,6 +90,7 @@
                            required>
                 </p>
 
+                <!-- Comments: multi-line box, at least 10 characters -->
                 <p>
                     <label for="comments">Comments</label><br>
                     <textarea id="comments" name="comments"
@@ -87,6 +100,7 @@
                               required></textarea>
                 </p>
 
+                <!-- Submit sends the form, Reset clears it -->
                 <p>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
@@ -98,6 +112,7 @@
     </article>
     </main>
 
+    <!-- Footer: contact email and copyright -->
     <footer>
         <address>
             <p>

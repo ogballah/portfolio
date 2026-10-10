@@ -1,8 +1,11 @@
+/* phone.css - phone layout, screens 480px and narrower */
 
+/* Padding and borders count inside an element's width, so % widths add up */
 * {
     box-sizing: border-box;
 }
 
+/* Page defaults: bold text, roomy line spacing, white on black */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +15,7 @@ body {
     background-color: #000000; /* black */
 }
 
+/* Full-width page with thin blue side borders */
 #wrapper {
     width: 100%;
     margin: 0 auto;
@@ -20,55 +24,69 @@ body {
     border-right: 1px solid #1565C0; /* blue */
 }
 
+/* Stops the floated nav buttons from collapsing the header */
 .clear {
     clear: both;
 }
 
+/* Header: navy with a left-to-right gradient and a light blue line below */
 header {
-    background-color: #0A2A66; /* navy */
-    background-image: linear-gradient(to right, #0A2A66, #1565C0); /* navy to blue */
-    color: #ffffff; /* white */
+    background-color: #0A2A66; 
+    background-image: linear-gradient(to right, #0A2A66, #1565C0); 
+    color: #ffffff; 
     padding: 1em;
-    border-bottom: 4px solid #4FA3FF; /* light blue */
+    border-bottom: 4px solid #4FA3FF; 
 }
 
+/* Smaller title and no extra margin on the nav wrapper */
 header h1 { margin: 0 0 0.5em; font-size: 1.5em; }
 nav h4 { margin: 0; font-size: 1em; }
 
+/* Nav buttons: 49% wide, so two per row */
 nav a.button {
     float: left;
     width: 49%;
     text-align: center;
-    background-color: #000000; /* black */
-    color: #ffffff; /* white */
+    background-color: #000000; 
+    color: #ffffff; 
     text-decoration: none;
     padding: 0.6em 0;
-    border: 1px solid #4FA3FF; /* light blue */
+    border: 1px solid #4FA3FF; 
     border-radius: 4px;
     margin: 0 0 2%;
 }
 
+/* Gap between the two buttons in each row */
 nav a.button:nth-child(odd) { margin-right: 2%; }
+
+/* Buttons turn light blue on hover or keyboard focus */
 nav a.button:hover, nav a.button:focus { background-color: #4FA3FF; color: #000000; }
 
+/* Content area, with an underline under each heading */
 article { padding: 1.5em 1em; }
 article h2 { color: #4FA3FF; border-bottom: 2px solid #1565C0; padding-bottom: 0.2em; }
+
+/* Each section starts below any floated element */
 article section { clear: both; }
 
+/* Links are light blue; focused items get a visible outline (accessibility) */
 a { color: #4FA3FF; }
 a:focus, input:focus, textarea:focus { outline: 3px solid #4FA3FF; outline-offset: 2px; }
 
+/* Photo is not floated on phones: centered above the text */
 figure { float: none; width: 60%; max-width: 240px; margin: 0 auto 1em; }
 figure img { display: block; width: 100%; height: auto; border: 3px solid #1565C0; border-radius: 8px; }
 figcaption h5 { margin: 0.5em 0 0; font-size: 1em; text-align: center; }
 
+/* Video fills the screen width and keeps its proportions */
 video { display: block; width: 100%; max-width: 640px; height: auto; background-color: #000000; }
 
+/* Project boxes stack full width, with a blue stripe on the left */
 .project-box {
     display: block;
     width: 100%;
-    background-color: #111111; /* very dark gray */
-    border-left: 6px solid #1565C0; /* blue */
+    background-color: #111111; 
+    border-left: 6px solid #1565C0; 
     border-radius: 4px;
     padding: 0.5em 1em;
     margin: 0.8em 0;
@@ -77,6 +95,7 @@ video { display: block; width: 100%; max-width: 640px; height: auto; background-
 .project-box h3 { margin: 0.4em 0; color: #4FA3FF; }
 label { font-weight: bold; }
 
+/* Text fields: white boxes with a blue border */
 input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     max-width: 420px;
@@ -88,8 +107,10 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     font: inherit;
 }
 
+/* Comments box can use the full width */
 textarea { max-width: 100%; }
 
+/* Submit and Reset buttons: Submit is blue */
 input[type="submit"], input[type="reset"] {
     background-color: #1565C0;
     color: #ffffff;
@@ -101,15 +122,17 @@ input[type="submit"], input[type="reset"] {
     cursor: pointer;
 }
 
+/* Reset button is white so it looks different from Submit */
 input[type="reset"] { background-color: #ffffff; color: #000000; }
 
+/* Footer: blue with an angled (135deg) gradient and a light blue line above */
 footer {
     background-color: #1565C0; /* blue */
-    background-image: linear-gradient(135deg, #1565C0, #0A2A66); /* blue to navy */
-    color: #ffffff; /* white */
+    background-image: linear-gradient(135deg, #1565C0, #0A2A66); 
+    color: #ffffff; 
     text-align: center;
     padding: 1em;
-    border-top: 4px solid #4FA3FF; /* light blue */
+    border-top: 4px solid #4FA3FF; 
 }
 
 footer address { font-style: normal; }

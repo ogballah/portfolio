@@ -1,27 +1,33 @@
+/* full.css - desktop layout, screens 961px and wider */
 
+/* Padding and borders count inside an element's width, so % widths add up */
 * {
     box-sizing: border-box;
 }
 
+/* Page defaults: no margin, white text on black */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    background: black;
+    background-color: black;
 }
 
+/* Fluid width: 90% of the screen, max 1100px, centered */
 #wrapper {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
+/* Header: navy background with a left-to-right gradient */
 header {
     padding: 1em;
-    background: #0A2A66;
+    background-color: #0A2A66;
     background-image: linear-gradient(to right, #0A2A66, #1565C0);
 }
 
+/* Nav buttons float side by side: 4 x 24% + 3 x 1.33% = 100% */
 nav a.button {
     float: left;
     width: 24%;
@@ -29,9 +35,10 @@ nav a.button {
     padding: 10px;
     text-align: center;
     color: white;
-    background: black;
+    background-color: black;
 }
 
+/* No gap after the last button */
 nav a.button:last-child {
     margin-right: 0;
 }
@@ -40,10 +47,12 @@ article {
     padding: 1em;
 }
 
+/* Light blue headings */
 article h2 {
     color: #4FA3FF;
 }
 
+/* Photo floats left so the text wraps beside it */
 figure {
     float: left;
     width: 28%;
@@ -51,37 +60,43 @@ figure {
     margin: 0 3% 1em 0;
 }
 
+/* Image fills the figure and keeps its proportions */
 figure img {
     width: 100%;
     height: auto;
 }
 
+/* Video shrinks with the page, never wider than 640px */
 video {
     width: 100%;
     max-width: 640px;
 }
 
+/* Project boxes: 30% wide, so three fit on one row */
 .project-box {
     display: inline-block;
     width: 30%;
     margin: 1%;
     padding: 1em;
-    background: #222;
+    background-color: #222;
 }
 
+/* Form fields fill their space, up to 420px */
 input, textarea {
     width: 100%;
     max-width: 420px;
     padding: 8px;
 }
 
+/* Footer: blue background with an angled (135deg) gradient */
 footer {
     padding: 1em;
     text-align: center;
-    background: #1565C0;
+    background-color: #1565C0;
     background-image: linear-gradient(135deg, #1565C0, #0A2A66);
 }
 
+/* Stops the floated nav buttons from collapsing the header */
 .clear {
     clear: both;
 }
